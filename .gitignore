@@ -57,3 +57,11 @@ docker-compose.override.yml
 
 # === Local agent/tooling state (non-project) ===
 .claude-replay.*
+# Backend secrets
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Local Spring configuration
+backend/src/main/resources/application-local.yml
+backend/src/main/resources/application-local.properties
